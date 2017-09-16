@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.transform.position, shotSpawn.transform.rotation);
+            audio.Play();
         }
     }
 
